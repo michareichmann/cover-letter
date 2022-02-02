@@ -1,0 +1,24 @@
+% ---------------- GENERAL PREAMBLE SETTINGS ------------------------------------------
+\makeatletter 
+\def\input@path{ {sections/} {preamble/} {frontbackmatter/}} 
+
+\newcommand*{\phone}[1]{\gdef\@phone{#1}}
+\newcommand*{\@phone}{+41 76 1234123}
+\newcommand*{\email}[1]{\gdef\@email{#1}}
+\newcommand*{\@email}{bla@bla.com}
+\makeatother
+
+\input{packages}
+\input{commands}
+
+\def\thickhrulefill{\leavevmode \leaders \hrule height 1pt\hfill \kern \z@}
+
+\newfontfamily\ubuntu{Ubuntu}
+\newfontfamily\dejavu{DejaVuSans}
+
+\setlength{\parskip}{1em}
+% \setlength{\headheight}{14pt}
+% \pagestyle{fancy}
+
+\let\endtitlepage\relax
+\input{titlepage}
