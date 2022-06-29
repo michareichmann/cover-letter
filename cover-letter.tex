@@ -1,15 +1,20 @@
-\documentclass[14pt]{extarticle}
+\documentclass[12pt]{extarticle}
 \usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
 %
 \input{preamble/general}
+\setmainfont{Lato}
 %
 %! region INFO
 \author{Michael Reichmann}
 \phone{+49 178 1988015}
 \email{micha.reichmann@gmail.com}
-\date{\today}
+\street{Forchstrasse 151}
+\address{8032 Z\"urich}
+\date{Z\"urich, \today}
 
 \company{SPEAG}
+\compstreet{Zeughausstrasse 43}
+\compaddress{8004 Z\"urich}
 \oldcomp{ETH Z\"urich}
 \position{Software Engineer}
 %! endregion
@@ -17,6 +22,7 @@
 \begin{document}
 %
 \maketitle % address lines
+\tikz[remember picture,overlay,blend mode = multiply] \node[inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{figures/bkg}};
 %
 Dear Hiring Manager,\par
 %
