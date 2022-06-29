@@ -1,17 +1,16 @@
 % ---------------- GENERAL PREAMBLE SETTINGS ------------------------------------------
-\makeatletter 
-\def\input@path{ {sections/} {preamble/} {frontbackmatter/}} 
-
-\newcommand*{\phone}[1]{\gdef\@phone{#1}}
-\newcommand*{\@phone}{+41 76 1234123}
-\newcommand*{\email}[1]{\gdef\@email{#1}}
-\newcommand*{\@email}{bla@bla.com}
+\makeatletter
+\newcommand*{\phone}[1]{\gdef\@phone{#1}}\newcommand*{\@phone}{+41 76 1234123}
+\newcommand*{\email}[1]{\gdef\@email{#1}}\newcommand*{\@email}{bla@bla.com}
+\newcommand*{\company}[1]{\gdef\@company{#1\xspace}}\newcommand*{\@company}{SPEAG}
+\newcommand*{\oldcomp}[1]{\gdef\@oldcomp{#1\xspace}}\newcommand*{\@oldcomp}{ETH Z\"urich}
+\newcommand*{\position}[1]{\gdef\@position{#1\xspace}}\newcommand*{\@position}{Software Engineer}
 \makeatother
 
-\input{packages}
-\input{commands}
+\input{preamble/packages}
+\input{preamble/commands}
 
-\def\thickhrulefill{\leavevmode \leaders \hrule height 1pt\hfill \kern \z@}
+\newcommand{\thickhrulefill}{\leavevmode \leaders \hrule height 1pt\hfill \kern \z@}
 
 \newfontfamily\ubuntu{Ubuntu}
 \newfontfamily\dejavu{DejaVuSans}
@@ -21,4 +20,4 @@
 % \pagestyle{fancy}
 
 \let\endtitlepage\relax
-\input{titlepage}
+\input{frontbackmatter/titlepage}
